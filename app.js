@@ -18,8 +18,8 @@ app.get('/api/timestamp/:time', (req, res) => {
   //check if par time is passed and have valid date
   if (req.params.time) {
     let time = req.params.time;
-    
-    // check if time paramer contains only numbers (timestamp)
+
+    // check if time paramer contains only numbers (timestamp).
 
     if(/^\d+$/.test(time)){
       time =  parseInt(time);
