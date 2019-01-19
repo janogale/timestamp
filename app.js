@@ -49,7 +49,8 @@ app.get('/api/timestamp/:time', (req, res) => {
 
 
 app.get('*', (req, res) => {
-  res.redirect('/api/timestamp/');
+  res.sendFile( __dirname + '/guide.html' )
+  //res.redirect('/api/timestamp/');
 });
 
 
